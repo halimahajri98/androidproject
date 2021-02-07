@@ -1,8 +1,7 @@
-package com.example.lampstore;
+package com.example.lampstore.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +12,9 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class produits extends AppCompatActivity {
+import com.example.lampstore.R;
+
+public class ProductsActivity extends AppCompatActivity {
 GridView gridView ;
 String[] produitsNames= {"White Fabric Shade table lamp","Blue shade table lamp with Gold Base",
         "Balck Shade & Black Base","Multicolor Shade table lamp with Brown Base",
@@ -37,7 +38,7 @@ int [] produitsImages = {R.drawable.tl1 , R.drawable.tl2, R.drawable.tl3,R.drawa
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               Intent intent = new Intent(getApplicationContext(), activity_grid_item.class);
+               Intent intent = new Intent(getApplicationContext(), ProductDetailsActivity.class);
                intent.putExtra("name", produitsNames[0]);
                intent.putExtra("image", produitsImages[0]);
                startActivity(intent);

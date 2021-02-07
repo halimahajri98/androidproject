@@ -1,4 +1,4 @@
-package com.example.lampstore;
+package com.example.lampstore.view.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class formulaire extends AppCompatActivity {
+import com.example.lampstore.R;
+
+public class FormActivity extends AppCompatActivity {
     Button btnsend ;
 
     @Override
@@ -20,7 +22,7 @@ public class formulaire extends AppCompatActivity {
         btnsend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(formulaire.this , paiement.class);
+                Intent intent = new Intent(FormActivity.this , PaymentActivity.class);
                 startActivity(intent);
 
             }

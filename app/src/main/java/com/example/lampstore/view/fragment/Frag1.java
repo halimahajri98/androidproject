@@ -1,4 +1,4 @@
-package com.example.lampstore;
+package com.example.lampstore.view.fragment;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.lampstore.R;
 
 
 public class Frag1 extends Fragment {

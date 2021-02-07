@@ -1,4 +1,4 @@
-package com.example.lampstore;
+package com.example.lampstore.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class activity_grid_item extends AppCompatActivity {
+import com.example.lampstore.R;
+
+public class ProductDetailsActivity extends AppCompatActivity {
     TextView name ;
     ImageView image;
     Button btnbtn ;
@@ -24,7 +26,7 @@ public class activity_grid_item extends AppCompatActivity {
         btnbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(activity_grid_item.this , formulaire.class);
+                Intent intent = new Intent(ProductDetailsActivity.this , FormActivity.class);
                 startActivity(intent);
 
             }

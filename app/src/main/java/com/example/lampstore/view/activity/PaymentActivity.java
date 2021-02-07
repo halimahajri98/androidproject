@@ -1,4 +1,4 @@
-package com.example.lampstore;
+package com.example.lampstore.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 
-public class paiement extends AppCompatActivity {
+import com.example.lampstore.R;
+
+public class PaymentActivity extends AppCompatActivity {
     RadioButton btncard , btcard;
     Button btnpaiement;
 
@@ -27,7 +29,7 @@ public class paiement extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(btcard.isChecked()){
-                    Intent intent = new Intent(paiement.this , paiement.class);
+                    Intent intent = new Intent(PaymentActivity.this , PaymentActivity.class);
                     startActivity(intent);
                 }
 
