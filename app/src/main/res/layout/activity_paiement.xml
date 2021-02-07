@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/rd"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:id="@+id/cardd"
+            android:background="@drawable/edinar"
+            android:layout_width="85dp"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="50px">
+        </RadioButton>
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:id="@+id/card"
+            android:background="@drawable/paypal"
+            android:layout_width="85dp"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="50px">
+        </RadioButton>
+    </RadioGroup>
+
+    <view
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background ="#3F2145"
+        android:layout_below="@+id/rd"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rd"
+        android:layout_alignLeft="@+id/rd"
+        android:layout_alignRight="@+id/rd"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="35dp"
+        android:elevation="50dp">
+
+        <Button
+            android:id="@+id/butpaiement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/capsules"
+            android:layout_centerHorizontal="true"
+            android:text="Peaiment"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragments"
+        android:layout_width="match_parent"
+        android:layout_height="458dp"
+        android:layout_marginTop="120dp" />
+
+
+
+
+</RelativeLayout>

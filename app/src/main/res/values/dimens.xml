@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="meduim">16dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="xSmall">4dp</dimen>
+
+</resources>

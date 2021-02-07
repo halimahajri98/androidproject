@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+  <include layout="@layout/toolbar"></include>
+
+
+    <LinearLayout
+        android:id="@+id/linear_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="35dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingTop="35dp"
+            android:src="@drawable/man" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_l"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="49dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_person">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="User01"
+            android:textSize="15dp">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/email">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="49dp"
+            android:text="User@gmail.com"
+            android:textSize="15dp">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/lin"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_btn"
+            android:gravity="center"
+            android:textColor="#4C99AC"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_edit_"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="-10dp"
+            android:text="Edit Profile"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_btn"
+            android:gravity="center"
+            android:textColor="#4C99AC"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_lock"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="-10dp"
+            android:text="Change Password"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

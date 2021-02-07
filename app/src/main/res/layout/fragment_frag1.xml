@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag1"
+    android:background="#F4F4F4"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/h1"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="80dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Num Carte "
+            android:textColor="#000000"
+            android:textSize="20dp">
+        </TextView>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="1243 5210 2507 7214"
+            android:paddingLeft="40dp"
+            android:background="@drawable/capsules">
+        </EditText>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date d'expiration"
+            android:textColor="#000000"
+            android:textSize="20dp">
+        </TextView>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:hint="MM/AA"
+            android:background="@drawable/capsules">
+        </EditText>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CVC /CVV"
+            android:textColor="#000000"
+            android:textSize="20dp">
+        </TextView>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:paddingLeft="40dp"
+            android:layout_height="wrap_content"
+            android:hint="123"
+            android:background="@drawable/capsules">
+        </EditText>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

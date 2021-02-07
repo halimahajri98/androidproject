@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "78501925087",
+    "project_id": "lampstore",
+    "storage_bucket": "lampstore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78501925087:android:db9a0cfaf920deeead596a",
+        "android_client_info": {
+          "package_name": "com.example.lampstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78501925087-htci56cn72r3j0lbp84n90ap536bl39j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlF5yN3ccQQeDd6sTUtS7SMhH8r-BBxKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78501925087-htci56cn72r3j0lbp84n90ap536bl39j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

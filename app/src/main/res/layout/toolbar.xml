@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/retour"
+            android:layout_width="30dp"
+            android:elevation="10dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_arrow_back"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Account Settings"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="15sp"
+            android:textColor="#6F5673"
+            android:textStyle="normal"
+            android:layout_alignParentRight="true"/>
+    </LinearLayout>
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background ="#3F2145"
+        android:layout_below="@+id/linear_ll"/>
+
+</RelativeLayout>

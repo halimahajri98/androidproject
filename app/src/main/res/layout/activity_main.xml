@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/meduim">
+
+        <Button
+            android:layout_centerInParent="true"
+            android:id="@+id/squares"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="12dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/squares"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LAMP"
+                android:textColor="#060606"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deft accessories"
+                android:layout_marginTop="@dimen/xSmall"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnuser"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:padding="12dp"
+                android:background="@drawable/user"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/grey_cercular_border"
+                android:padding="@dimen/small"
+                android:src="@drawable/heart" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lamptable" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/meduim">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TABLE LAMP"
+                    android:textColor="#060606"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/small">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="@dimen/xSmall"
+                        android:src="@drawable/star_clr" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="@dimen/xSmall"
+                        android:src="@drawable/star_clr" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="@dimen/xSmall"
+                        android:src="@drawable/star_clr" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="@dimen/xSmall"
+                        android:src="@drawable/star_clr" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="@dimen/xSmall"
+                        android:src="@drawable/star_grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="249 Review"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="$90"
+                android:textColor="#060606"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/viloet_cercular_border"
+            android:orientation="vertical"
+            android:padding="@dimen/meduim">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Suggest for you"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="View All"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_cercular_border"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/lamp2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/small"
+                            android:paddingRight="@dimen/small">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Edision Table Lamp"
+                                android:textColor="#060606"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$350 "
+                                    android:textColor="#060606"
+                                    android:textSize="13sp" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/xSmall"
+                                    android:layout_marginLeft="@dimen/xSmall">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/xSmall"
+                                        android:layout_marginLeft="@dimen/xSmall"
+                                        android:text="$750 "
+                                        android:textColor="#FA6B1B"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="30dp"
+                                        android:layout_height="1dp"
+                                        android:layout_centerVertical="true"
+                                        android:background="#FA6B1B" />
+                                </RelativeLayout>
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/light_orange_circle"
+                                    android:padding="6.5dp"
+                                    android:src="@drawable/heart_orange" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/white_cercular_border"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/lamp3" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/small"
+                            android:paddingRight="@dimen/small">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Arlo Table Lamp"
+                                android:textColor="#060606"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$250 "
+                                    android:textColor="#060606"
+                                    android:textSize="13sp" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/xSmall"
+                                    android:layout_marginLeft="@dimen/xSmall">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/xSmall"
+                                        android:layout_marginLeft="@dimen/xSmall"
+                                        android:text="$650 "
+                                        android:textColor="#FA6B1B"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="30dp"
+                                        android:layout_height="1dp"
+                                        android:layout_centerVertical="true"
+                                        android:background="#FA6B1B" />
+                                </RelativeLayout>
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/light_orange_circle"
+                                    android:padding="6.5dp"
+                                    android:src="@drawable/heart_orange" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/white_cercular_border"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/lamp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/small"
+                            android:paddingRight="@dimen/small">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Arlo Table Lamp"
+                                android:textColor="#060606"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$120 "
+                                    android:textColor="#060606"
+                                    android:textSize="13sp" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/xSmall"
+                                    android:layout_marginLeft="@dimen/xSmall">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/xSmall"
+                                        android:layout_marginLeft="@dimen/xSmall"
+                                        android:text="$250 "
+                                        android:textColor="#FA6B1B"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="30dp"
+                                        android:layout_height="1dp"
+                                        android:layout_centerVertical="true"
+                                        android:background="#FA6B1B" />
+                                </RelativeLayout>
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/light_orange_circle"
+                                    android:padding="6.5dp"
+                                    android:src="@drawable/heart_orange" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/white_cercular_border"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/lamp6" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/small"
+                            android:paddingRight="@dimen/small">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Arlo Table Lamp"
+                                android:textColor="#060606"
+                                android:textSize="16sp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$250 "
+                                    android:textColor="#060606"
+                                    android:textSize="13sp" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/xSmall"
+                                    android:layout_marginLeft="@dimen/xSmall">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/xSmall"
+                                        android:layout_marginLeft="@dimen/xSmall"
+                                        android:text="$650 "
+                                        android:textColor="#FA6B1B"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="30dp"
+                                        android:layout_height="1dp"
+                                        android:layout_centerVertical="true"
+                                        android:background="#FA6B1B" />
+                                </RelativeLayout>
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/light_orange_circle"
+                                    android:padding="6.5dp"
+                                    android:src="@drawable/heart_orange" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/white_cercular_border"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/lamp7" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/small"
+                            android:paddingRight="@dimen/small">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alvaro Table Lamp"
+                                android:textColor="#060606"
+                                android:textSize="16sp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$120 "
+                                    android:textColor="#060606"
+                                    android:textSize="13sp" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/xSmall"
+                                    android:layout_marginLeft="@dimen/xSmall">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/xSmall"
+                                        android:layout_marginLeft="@dimen/xSmall"
+                                        android:text="$80 "
+                                        android:textColor="#FA6B1B"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="30dp"
+                                        android:layout_height="1dp"
+                                        android:layout_centerVertical="true"
+                                        android:background="#FA6B1B" />
+                                </RelativeLayout>
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/light_orange_circle"
+                                    android:padding="6.5dp"
+                                    android:src="@drawable/heart_orange" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/white_cercular_border"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/lamp8" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/small"
+                            android:paddingRight="@dimen/small">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alvaro Table Lamp"
+                                android:textColor="#060606"
+                                android:textSize="16sp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$120 "
+                                    android:textColor="#060606"
+                                    android:textSize="13sp" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/xSmall"
+                                    android:layout_marginLeft="@dimen/xSmall">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/xSmall"
+                                        android:layout_marginLeft="@dimen/xSmall"
+                                        android:text="$80 "
+                                        android:textColor="#FA6B1B"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="30dp"
+                                        android:layout_height="1dp"
+                                        android:layout_centerVertical="true"
+                                        android:background="#FA6B1B" />
+                                </RelativeLayout>
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/light_orange_circle"
+                                    android:padding="6.5dp"
+                                    android:src="@drawable/heart_orange" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
