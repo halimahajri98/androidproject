@@ -9,20 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LampStore">
-        <activity android:name=".profile" />
-        <activity android:name=".paiement" />
-        <activity android:name=".singup" />
-        <activity android:name=".login" />
-        <activity android:name=".activity_grid_item" />
-        <activity android:name=".produits" />
-        <activity android:name=".formulaire" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.activity.LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.activity.ProfileActivity" />
+        <activity android:name=".view.activity.PaymentActivity" />
+        <activity android:name=".view.activity.SignUpActivity" />
+        <activity android:name=".view.activity.LoginActivity"/>
+        <activity android:name=".view.activity.ProductDetailsActivity" />
+        <activity android:name=".view.activity.ProductsActivity" />
+        <activity android:name=".view.activity.FormActivity" />
+        <activity android:name=".view.activity.MainActivity" />
     </application>
 
 </manifest>
