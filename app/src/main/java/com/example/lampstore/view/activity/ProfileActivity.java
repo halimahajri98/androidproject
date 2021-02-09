@@ -22,7 +22,6 @@ public class ProfileActivity extends AppCompatActivity {
         btretour.setOnClickListener(v -> {
             Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
             startActivity(intent);
-
         });
     }
 }

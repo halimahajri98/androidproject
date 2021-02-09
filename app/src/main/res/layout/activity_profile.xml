@@ -8,7 +8,9 @@
 
   <include layout="@layout/toolbar"></include>
 
-
+    <!-- When setting up a Text Size, we use sp -->
+    <!-- When setting up a value for views/ constraints / etc... , we use dp -->
+    <!-- Don't put hardcoded string in android:text : store them in strings.xml-->
     <LinearLayout
         android:id="@+id/linear_l"
         android:layout_width="match_parent"
@@ -46,9 +48,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UserName"
+            android:text="@string/username"
             android:textColor="#000000"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:textStyle="bold">
         </TextView>
 
@@ -56,8 +58,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
-            android:text="User01"
-            android:textSize="15dp">
+            android:text="@string/user01"
+            android:textSize="15sp">
         </TextView>
 
     </LinearLayout>
@@ -84,9 +86,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:text="Email"
+            android:text="@string/email"
             android:textColor="#000000"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:textStyle="bold">
         </TextView>
 
@@ -94,8 +96,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="49dp"
-            android:text="User@gmail.com"
-            android:textSize="15dp">
+            android:text="@string/email_exp"
+            android:textSize="15sp">
         </TextView>
 
     </LinearLayout>
@@ -114,12 +116,12 @@
             android:background="@drawable/bg_btn"
             android:gravity="center"
             android:textColor="#4C99AC"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:drawableLeft="@drawable/ic_edit_"
             android:paddingLeft="20dp"
             android:layout_marginLeft="-10dp"
-            android:text="Edit Profile"/>
+            android:text="@string/edit_profile"/>
 
         <TextView
             android:layout_marginTop="15dp"
@@ -128,12 +130,12 @@
             android:background="@drawable/bg_btn"
             android:gravity="center"
             android:textColor="#4C99AC"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:drawableLeft="@drawable/ic_lock"
             android:paddingLeft="20dp"
             android:layout_marginLeft="-10dp"
-            android:text="Change Password"/>
+            android:text="@string/change_password"/>
 
 
     </LinearLayout>
